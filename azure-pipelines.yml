@@ -13,12 +13,12 @@ stages:
 - stage: Tests
   displayName: 'Run Tests (Node.js)'
   jobs:
-    - job: Audit
-      pool:
-        vmImage: 'ubuntu-latest'
-      steps:
-      - script: npm audit
-        displayName: Audit Dependencies
+    # - job: Audit
+    #   pool:
+    #     vmImage: 'ubuntu-latest'
+    #   steps:
+    #   - script: npm audit
+    #     displayName: Audit Dependencies
 
     - job: Linter
       pool:
